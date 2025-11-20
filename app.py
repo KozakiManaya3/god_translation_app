@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 # APIキーの設定
 # TOMLのセクション名でアクセス
-GOOGLE_API_KEY = st.secrets["GOOGLE"]["GOOGLE_API_KEY"]
+GOOGLE_API_KEY = "AIzaSyCRRqHS1Be88Bgf_kXzZcM_C2NcfugA0zk"
 genai.configure(api_key=GOOGLE_API_KEY) 
 model = genai.GenerativeModel("gemini-flash-latest")
 
