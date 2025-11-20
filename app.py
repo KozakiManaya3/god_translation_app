@@ -5,13 +5,14 @@ import google.generativeai as genai
 # TOMLのセクション名でアクセス
 GOOGLE_API_KEY = "AIzaSyCRRqHS1Be88Bgf_kXzZcM_C2NcfugA0zk"
 genai.configure(api_key=GOOGLE_API_KEY) 
-model = genai.GenerativeModel("gemini-flash-latest")
+    model = "gemini-3-pro-preview"
+
 
 # --- UI部分 ---
 st.title("みんなでつくるAI翻訳アプリ") # タイトル
 
 source_text = st.text_area("翻訳したいテキストを入力してください") # テキスト入力欄
-target_lang = st.selectbox("翻訳先の言語", []) # セレクトボックス
+target_lang = st.selectbox("翻訳先の言語", [日本語]) # セレクトボックス
 submit_button = st.button("〇〇〇") # ボタン
 
 # --- ボタンが押された後の処理 ---
